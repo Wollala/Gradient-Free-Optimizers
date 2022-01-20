@@ -4,6 +4,7 @@
 
 
 import numpy as np
+from scipy.special import expit
 
 from ..local_opt import StochasticHillClimbingOptimizer
 from ...search import Search
@@ -19,7 +20,7 @@ class SimulatedAnnealingOptimizer(StochasticHillClimbingOptimizer, Search):
         self.temp = start_temp
 
     def _accept_default(self):
-        return np.exp(-self._score_norm_default() / self.temp)
+        return expit(-self._score_norm_default() / self.temp)
 
     def _accept_adapt(self):
         return self._score_norm_adapt() / self.temp

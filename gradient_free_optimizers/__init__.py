@@ -2,7 +2,7 @@
 # Email: simon.blanke@yahoo.com
 # License: MIT License
 
-__version__ = "1.0.5"
+__version__ = "1.0.7"
 __license__ = "MIT"
 
 from .optimizers import (
@@ -23,12 +23,7 @@ from .optimizers import (
     BayesianOptimizer,
     TreeStructuredParzenEstimators,
     ForestOptimizer,
-    OneDimensionalBayesianOptimization,
-    ParallelAnnealingOptimizer,
     EnsembleOptimizer,
-    LocalBayesianOptimizer,
-    VariableResolutionBayesianOptimizer,
-    EvoSubSpaceBayesianOptimizer,
 )
 
 
@@ -50,10 +45,5 @@ __all__ = [
     "BayesianOptimizer",
     "TreeStructuredParzenEstimators",
     "ForestOptimizer",
-    "OneDimensionalBayesianOptimization",
-    "ParallelAnnealingOptimizer",
     "EnsembleOptimizer",
-    "LocalBayesianOptimizer",
-    "VariableResolutionBayesianOptimizer",
-    "EvoSubSpaceBayesianOptimizer",
 ]
